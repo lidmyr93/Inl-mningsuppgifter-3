@@ -2,6 +2,6 @@
 function klot(x){
     volym = (4 * Math.PI * (Math.pow(x,3))) / 3; // Volym uträkning
     area  = 4 * Math.PI * (Math.pow(x,2));       // area uträkning
-    console.log('Volymen är ' + volym.toFixed(2) + '\n' + 'Arean är '+ area.toFixed(2)); // Utskrift med toFixed() för att undvika alla decimaler.
+    console.log('Volymen är ' + volym.toFixed(2) + '\n' + 'Arean är '+ area.toFixed(2)); // Utskrift med toFixed() för att korta ner decimalerna.
 }
 klot(10); // anrop med valfri (radie)

@@ -8,7 +8,7 @@ function Person(namn,epost,mobil,gatuadress,postnummer,ort){
       postnummer : postnummer,
       ort        : ort,
     }
-    // Metod som snyggar till utskriften i consolen 
+    // Metod som hämtar rätt info och skriver ut 
     this.print = function () {
         console.log(this.namn + '\n' + '\n' + this.adress.gatuadress + '\n' + this.adress.postnummer + ' ' + this.adress.ort);
     }
