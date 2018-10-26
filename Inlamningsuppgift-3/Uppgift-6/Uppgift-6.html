@@ -15,11 +15,11 @@
        let total = 1;
        // Skaffa information , om information överstämmer break; annars (tal mindre än 1 och större än 1000) fråga igen.
        while(true){
-        inputNumb = +prompt('Beräkning av Fakulteten\nSkriv in ett heltal mellan 1 och 1000'); // +prompt för att få number returnerat.
-        if (inputNumb < 1 || inputNumb>1000){
-            alert('Talet är inte mellan 1 och 1000! \nTesta igen' );
+        inputNumb = prompt('Beräkning av Fakulteten\nSkriv in ett heltal mellan 1 och 1000'); // +prompt för att få number returnerat.
+        if (inputNumb < 1 || inputNumb>1000 || isNaN(inputNumb)){
+            alert('Talet är inte mellan 1 och 1000 eller i textformat! \nTesta igen' );
              }
-        else{
+        else {
             break;
         }
        }// break;

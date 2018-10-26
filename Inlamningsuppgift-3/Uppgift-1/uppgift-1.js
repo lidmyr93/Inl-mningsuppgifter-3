@@ -18,4 +18,4 @@ let magnus = new Person('Magnus Lidmyr','magnus.lidyr@gmail.com','070-000 00 00'
 let kalle  = new Person('Kalle Anka', 'kalle.anka@gmail.com','070-111 11 11','Solnavägen 4','133 33','Solna');
 
 magnus.print();
-kalle.print();
+//kalle.print();
