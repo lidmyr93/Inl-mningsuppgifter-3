@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fakulteten</h1>
+    <p id = 'count'>  </p>
+     <script>
+        // Skapa 2 variabler som behövs
+       let inputNumb;
+       let total = 1;
+       // Skaffa information , om information överstämmer break; annars (tal mindre än 1 och större än 1000) fråga igen.
+       while(true){
+        inputNumb = +prompt('Beräkning av Fakulteten\nSkriv in ett heltal mellan 1 och 1000'); // +prompt för att få number returnerat.
+        if (inputNumb < 1 || inputNumb>1000){
+            alert('Talet är inte mellan 1 och 1000! \nTesta igen' );
+             }
+        else{
+            break;
+        }
+       }// break;
+         let i; // Enbart för att se i local scope under test i chrome dev tools.
+         for (i = 0; i < inputNumb; i++)
+            total = total * (inputNumb - i);   
+            /*
+            Varv 1: i: 0, inputNumb: 5-0, total: 1
+            Varv 2: i: 1, inputNumb: 5-1, total: 20
+            Varv 3: i: 2, inputNumb: 5-2, total: 60
+            Varv 4: i: 3, inputNumb: 5-3, total: 120
+            Varv 5: i: 4, inputNumb: 5-4, total: 120
+            Varv 6 = i: 5, i är inte mindra än inputNumb 5 , loopen avslutas.
+            */   
+          document.getElementById('count').innerHTML = 'Ditt resultat av fakulteten på '+ inputNumb + ' är ' + total;
+            
+    </script>
+</body>
+</html>
