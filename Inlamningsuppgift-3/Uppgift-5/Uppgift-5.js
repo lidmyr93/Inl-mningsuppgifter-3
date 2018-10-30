@@ -9,9 +9,9 @@ function randomDice(){
 }
 // Print funktion som tar emot rolls[] och sorterar siffrorna.
 function print(){
-   let rollsResult = randomDice(); // Anrop på funktionen randomDice() som lagrar resultatet i en variabel.
+   let rollsResult = randomDice(); // Anrop på funktionen randomDice() som lagrar data från return i en variabel.
    let value = [0,0,0,0,0,0];      // En array där siffrorna ska sorteras.
-   // Iteration över arrayen
+   // Iteration över arrayen rollsResult 
    for (let numb in rollsResult){
        // Hämtar alla ettor och lägger in dom i value[] på index 0, osv.
        if      (rollsResult[numb] == 1){ value[0]++ } 

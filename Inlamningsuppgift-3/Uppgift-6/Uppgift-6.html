@@ -10,6 +10,7 @@
     <h1>Fakulteten</h1>
     <p id = 'count'>  </p>
      <script>
+         
         // Skapa 2 variabler som behövs
        let inputNumb;
        let total = 1;
@@ -23,19 +24,21 @@
             break;
         }
        }// break;
-         let i; // Enbart för att se i local scope under test i chrome dev tools.
-         for (i = 0; i < inputNumb; i++)
-            total = total * (inputNumb - i);   
-            /*
-            Varv 1: i: 0, inputNumb: 5-0, total: 1
-            Varv 2: i: 1, inputNumb: 5-1, total: 20
-            Varv 3: i: 2, inputNumb: 5-2, total: 60
-            Varv 4: i: 3, inputNumb: 5-3, total: 120
-            Varv 5: i: 4, inputNumb: 5-4, total: 120
-            Varv 6 = i: 5, i är inte mindra än inputNumb 5 , loopen avslutas.
-            */   
+       function fakultet(inputNumb){
+           let i; // Enbart för att se i local scope under test i chrome dev tools.
+           for (i = 0; i < inputNumb; i++)
+           total = total * (inputNumb - i);   
+           /*
+           Varv 1: i: 0, inputNumb: 5-0, total: 1
+           Varv 2: i: 1, inputNumb: 5-1, total: 20
+           Varv 3: i: 2, inputNumb: 5-2, total: 60
+           Varv 4: i: 3, inputNumb: 5-3, total: 120
+           Varv 5: i: 4, inputNumb: 5-4, total: 120 
+           Varv 6: i: 5, i är inte mindra än inputNumb 5 , loopen avslutas.
+           */   
           document.getElementById('count').innerHTML = 'Ditt resultat av fakulteten på '+ inputNumb + ' är ' + total;
-            
+        }
+        fakultet(inputNumb);
     </script>
 </body>
 </html>
