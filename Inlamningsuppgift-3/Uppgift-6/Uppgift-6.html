@@ -19,6 +19,11 @@
         inputNumb = prompt('Beräkning av Fakulteten\nSkriv in ett heltal mellan 1 och 1000'); // +prompt för att få number returnerat.
         if (inputNumb < 1 || inputNumb>1000 || isNaN(inputNumb)){
             alert('Talet är inte mellan 1 och 1000 eller i textformat! \nTesta igen' );
+            continue;
+             }
+             else if (inputNumb > 170){
+             alert('Fakulteten på talet 171 och över kan inte hanteras av Javascript \nTesta igen');
+             continue;
              }
         else {
             break;
